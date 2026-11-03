@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumen — Debit card of the next-generation</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <!-- Фон: небо, звёзды, кольцо и вода рисуются шейдером -->
+  <canvas class="scene" id="scene" aria-hidden="true"></canvas>
+
+  <!-- Карта -->
+  <div class="card-stage">
+    <div class="card" id="card">
+      <div class="card__shine"></div>
+
+      <svg class="card__chip" viewBox="0 0 40 50" aria-hidden="true">
+        <rect x="1" y="1" width="38" height="48" rx="8" fill="#ecebf5" />
+        <path d="M13 1v48M27 1v48M1 17h12M1 33h12M27 17h12M27 33h12M13 25h14"
+              stroke="#9c97b8" stroke-width="2" fill="none" />
+      </svg>
+
+      <svg class="card__logo" viewBox="0 0 100 124" aria-hidden="true">
+        <defs>
+          <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#9a6bff" />
+            <stop offset="1" stop-color="#6a3df0" />
+          </linearGradient>
+        </defs>
+        <path d="M42 10 A48 48 0 0 0 90 58" stroke="url(#logoGrad)" stroke-width="16" fill="none" />
+        <path d="M10 66 A48 48 0 0 1 58 114" stroke="url(#logoGrad)" stroke-width="16" fill="none" />
+      </svg>
+
+      <div class="card__name">Lumen</div>
+    </div>
+  </div>
+
+  <!-- Интерфейс -->
+  <div class="ui">
+    <header class="header">
+      <a class="brand" href="#">
+        <svg class="brand__icon" viewBox="0 0 100 124" aria-hidden="true">
+          <path d="M42 10 A48 48 0 0 0 90 58" stroke="currentColor" stroke-width="16" fill="none" />
+          <path d="M10 66 A48 48 0 0 1 58 114" stroke="currentColor" stroke-width="16" fill="none" />
+        </svg>
+        Lumen
+      </a>
+
+      <nav class="nav glass">
+        <a href="#">Services</a>
+        <a href="#">How it Works</a>
+        <a href="#">Results</a>
+        <a href="#">Contacts</a>
+      </nav>
+
+      <button class="btn glass" type="button">
+        Get your card <span class="btn__dot"></span>
+      </button>
+    </header>
+
+    <h1 class="title">Money that moves<br><span>with you</span></h1>
+
+    <div class="middle">
+      <p class="middle__text">Pay, save, and send with no hidden fees —<br>all in one app that's always within reach.</p>
+      <ul class="middle__list">
+        <li>No maintenance fees</li>
+        <li>Issued in 2 minutes</li>
+      </ul>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__btns">
+        <button class="btn btn--primary" type="button">
+          Get your card <span class="btn__dot"></span>
+        </button>
+        <button class="btn" type="button">How it works</button>
+      </div>
+
+      <h2 class="title title--right"><span>Debit card of</span>the next-generation</h2>
+    </footer>
+  </div>
+
+</body>
+</html>
